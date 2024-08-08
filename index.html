@@ -9,7 +9,6 @@
     rel="stylesheet"
   />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <style>
     body {
       background-color: black;
@@ -123,7 +122,6 @@
    .contact-list li h5 a:hover {
      text-decoration: underline;
    }
-
 @media (max-width: 576px) {
   .contact-list {
     display: flex;
@@ -152,8 +150,7 @@
     }
     #scrollToTopBtn:hover {
       background-color: #333; /* Darker background on hover */
-    }   
-    
+    }    
     @media (max-width: 768px) {
       h1 {
         font-size: 80px;
@@ -187,7 +184,6 @@
       span {
         font-size: 10px;
       }
-
     }
     @media (max-width: 576px) {
       h1 {
@@ -256,7 +252,6 @@
       <button class="contact">Contact</button>
     </div>
   </nav>
-
   <div class="container center-content " id="home">
     <div class="row">
       <div class="col-12">
@@ -266,11 +261,9 @@
           <h5>I'm a Web Developer & Web Designer</h5>
         </div>
         <!-- <button id="scrollToTopBtn" title="Go to top">↑</button> -->
-       
       </div>
     </div>
   </div>
-
   <div class="container center-content" id="about">
     <div class="row">
       <div class="col-12">
@@ -298,8 +291,7 @@
         </p>
       </div>
     </div>
-  </div>
-  
+  </div>  
   <div class="container center-content" id="career">
     <div class="row">
       <div class="col-12">
@@ -342,8 +334,6 @@
       </div>
     </div>
   </div>
-
-
   <div class="container center-content" id="skills">
     <div class="row">
       <div class="col-12">
@@ -391,7 +381,6 @@
       </div>
     </div>
   </div>
-
   <div class="container center-content" id="contact">
     <div class="row">
       <div class="col-12">
@@ -425,15 +414,12 @@
       </div>
     </div>
   </div>
-
   <a id="scrollToTopBtn" href="#" onclick="scrollToTop()">↑</a>
-
   <script>
     // Function to scroll to the top with smooth behavior and custom duration
     function scrollToTop() {
       const scrollDuration = 10000; // Duration of the scroll animation in milliseconds
-      const scrollStep = -window.scrollY / (scrollDuration / 500);
-      
+      const scrollStep = -window.scrollY / (scrollDuration / 500);  
       const scrollInterval = setInterval(() => {
         if (window.scrollY !== 0) {
           window.scrollBy(0, scrollStep);
@@ -442,7 +428,6 @@
         }
       }, 500);
     }
-
     // Show the button when scrolled down
     window.onscroll = function() {
       const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -453,20 +438,14 @@
       }
     };
   </script>
-
-  
-  
-  
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const links = document.querySelectorAll('.nav-link');
-  
       for (const link of links) {
         link.addEventListener('click', function(event) {
           event.preventDefault();
           const targetId = this.getAttribute('href').substring(1);
           const targetElement = document.getElementById(targetId);
-  
           if (targetElement) {
             window.scrollTo({
               top: targetElement.offsetTop,
@@ -477,7 +456,5 @@
       }
     });
   </script>
-  
-  
 </body>
 </html>
