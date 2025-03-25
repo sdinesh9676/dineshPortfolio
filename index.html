@@ -58,6 +58,18 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    #home {
+  background-image: url('https://images.unsplash.com/vector-1738934022191-816477188009?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
     h1 {
       font-weight: 400;
       font-size: 300px;
@@ -70,10 +82,10 @@
       margin-top: 250px;
     }
     .career {
-      margin-top: 700px;
+      margin-top: 900px;
     }
     .skills{
-      margin-top: 1500px;
+      margin-top: 1700px;
     }
     .contactMe {
       margin-top: 1800px;
@@ -250,13 +262,13 @@
       <button class="contact">Contact</button>
     </div>
   </nav>
-  <div class="container center-content " id="home">
+  <div class="container-fluid center-content " id="home">
     <div class="row">
       <div class="col-12">
         <div class="items">
-          <h2>Hello, My Name is</h2>
-          <h1 class="bubble-text text">Dinesh</h1>
-          <h5>I'm a Web Developer & Web Designer</h5>
+          <h2 style="color: black; margin-top: -340px" >Hello, My Name is</h2>
+          <h1 class="bubble-text text" style="color: black;">Dinesh</h1>
+          <h5 style="color: black; font-weight: 700;">I'm a Web Developer & Web Designer</h5>
         </div>
         <!-- <button id="scrollToTopBtn" title="Go to top">↑</button> -->
       </div>
@@ -267,29 +279,35 @@
       <div class="col-12">
         <h2 class="aboutMe">About Me</h2>
       </div>
-      <div class="col-12 col-md-6 mt-5">
+  
+      <!-- Web Developer Section with background image -->
+      <div class="col-12 col-md-6 mt-5"> 
         <h2>Web Developer</h2>
-        <p>
-          <h5>Passionate about building dynamic and responsive websites, with over a year of professional 
+        <h5 style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 10px;">
+          Passionate about building dynamic and responsive websites, with over a year of professional 
           experience in web development. Specializes in PHP and Laravel, ensuring robust and scalable web 
           solutions. Combines technical skills in front-end and back-end development to create engaging user 
           experiences. Dedicated to continuous learning and applying innovative approaches to solve complex 
-          problems. Aims to deliver high-quality web applications that meet and exceed client expectations.</h5>
-        </p>
+          problems. Aims to deliver high-quality web applications that meet and exceed client expectations.
+        </h5>
       </div>
+  
+      <!-- UI/UX Designer Section with background image -->
       <div class="col-12 col-md-6 mt-5">
         <h2>UI/UX Designer</h2>
-        <p>
-          <h5>Dedicated to creating intuitive and visually appealing digital experiences, with a strong 
+        <h5 style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 10px;">
+          Dedicated to creating intuitive and visually appealing digital experiences, with a strong 
           background in UI/UX design. Utilizes tools like Figma and Adobe XD to craft seamless user interfaces 
           that enhance usability and user satisfaction. Experienced in understanding user needs and translating 
           them into functional, engaging designs. Strives to develop digital products that provide meaningful 
           and delightful experiences, ensuring smooth and enjoyable interactions with technology. Committed to 
-          staying current with design trends and best practices to deliver cutting-edge solutions.</h5>
-        </p>
+          staying current with design trends and best practices to deliver cutting-edge solutions.
+        </h5>
       </div>
+  
     </div>
-  </div>  
+  </div>
+  
   <div class="container center-content" id="career">
     <div class="row">
       <div class="col-12">
